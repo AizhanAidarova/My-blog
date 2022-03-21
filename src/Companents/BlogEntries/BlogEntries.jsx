@@ -23,15 +23,15 @@ const arrayBlogEntries = [
 ]
 
 const blog = () => {
-    let mas = arrayBlogEntries.map (content =>
+    let mas = arrayBlogEntries.map(content =>
     <BlogEntries
-        key = {content.id}
-        title = {content.title}
-        titleDesc = {content.titleDesc}
-        desc = {content.desc}
-        date = {content.date}
-        countComments = {content.countComments}
-        imageURL = {content.imageURL}/>
+        key={content.id}
+        title={content.title}
+        titleDesc={content.titleDesc}
+        desc={content.desc}
+        date={content.date}
+        countComments={content.countComments}
+        imageURL={content.imageURL}/>
     )
     return(
         <div className="w3-col m8 s12">
