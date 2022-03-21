@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const BlogItem = (props) => {
     console.log(props);
     return (
@@ -33,3 +31,5 @@ const BlogItem = (props) => {
 };
 
 export default BlogItem;
+
+

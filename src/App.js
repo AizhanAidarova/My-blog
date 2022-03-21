@@ -3,7 +3,7 @@ import {Header} from "./Companents/Header/Header";
 import BlogEntries from "./Companents/BlogEntries/BlogEntries";
 import Sidebar from "./Companents/Sidebar/Sidebar";
 import Footer from "./Companents/Footer/Footer";
-
+import "./index.css"
 
 const App = () => {
   return(
