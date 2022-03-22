@@ -10,7 +10,7 @@ const Tags = () => {
                 </div>
                 <div className="w3-container w3-white">
                     <p><span className="w3-tag w3-black w3-margin-bottom" style={{marginRight:"7px"}}>Travel</span>
-                        {tagsItem.map((item) =>{
+                        {tagsItem.map((item,index) =>{
                             return <span className="w3-tag w3-light-grey w3-small w3-margin-bottom" style={{marginRight:"7px"}}>{item.text}</span>
                             }
                         )}
