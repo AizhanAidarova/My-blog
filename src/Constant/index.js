@@ -22,7 +22,7 @@ export const posts = [
 export const popularPosts = [
     {
         imageURL:"https://www.w3schools.com/w3images/workshop.jpg",
-        title:"Lorem",
+        title:"Ocean",
         titleDesc:"Sed mattis nunc",
     },
     {
@@ -43,6 +43,9 @@ export const popularPosts = [
 ]
 
 export const tagsItem = [
+    {
+        text:'Travel'
+    },
     {
         text:'New York'
     },

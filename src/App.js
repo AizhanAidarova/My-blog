@@ -4,16 +4,18 @@ import BlogEntries from "./Companents/BlogEntries/BlogEntries";
 import Sidebar from "./Companents/Sidebar/Sidebar";
 import Footer from "./Companents/Footer/Footer";
 import "./index.css"
+import Article from "./pages/Article";
 
 const App = () => {
   return(
       <>
           <div className="w3-content" style={{maxWidth:"1400px"}}>
             <Header/>
-            <div className="w3-row">
-                <BlogEntries/>
-                <Sidebar/>
-            </div>
+           <Article/>
+            {/*<div className="w3-row">*/}
+            {/*    <BlogEntries/>*/}
+            {/*    <Sidebar/>*/}
+            {/*</div>*/}
           </div>
           <Footer/>
       </>
