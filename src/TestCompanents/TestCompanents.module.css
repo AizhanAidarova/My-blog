@@ -1,0 +1,8 @@
+.divBord{
+    border: 1px solid black;
+    background: white;
+    width: 480px;
+    height: 255px;
+    font-size: 22px;
+    font-family: "Times New Roman";
+}

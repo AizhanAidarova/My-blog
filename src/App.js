@@ -1,25 +1,21 @@
 import React from "react";
-import {Header} from "./Companents/Header/Header";
-import BlogEntries from "./Companents/BlogEntries/BlogEntries";
-import Sidebar from "./Companents/Sidebar/Sidebar";
-import Footer from "./Companents/Footer/Footer";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import "./index.css"
-import Article from "./pages/Article";
+import Main from "./pages/Main/Main";
+import Article from "./pages/Article/Article";
+import TestComponents from "./TestCompanents/TestCompanents";
 
 const App = () => {
-  return(
-      <>
-          <div className="w3-content" style={{maxWidth:"1400px"}}>
-            <Header/>
-           <Article/>
-            {/*<div className="w3-row">*/}
-            {/*    <BlogEntries/>*/}
-            {/*    <Sidebar/>*/}
-            {/*</div>*/}
-          </div>
-          <Footer/>
-      </>
-)
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path="test" element={<TestComponents/>} />
+                <Route path="/" element={<Main/>} />
+                <Route path="post/:id" element={<Article/>} />
+            </Routes>
+        </BrowserRouter>
+
+    )
 }
 
 export default App;
