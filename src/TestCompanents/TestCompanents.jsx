@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState} from "react";
-import style from "../TestCompanents/TestCompanents.module.css"
+import styles from "../TestCompanents/TestCompanents.module.css"
 
 const TestComponents = () => {
    const[count, setCount] = useState (0);
@@ -33,11 +33,19 @@ const TestComponents = () => {
             {
                 data.map((item) =>{
                     return (
-                        <div className={style.divBord}>
-                            <p key={item.id}>Name:{item.name}</p>
-                            <p key={item.id}>Email:{item.email}</p>
-                            <p key={item.id}>Phone:{item.phone}</p>
-                            <p key={item.id}>Website:{item.website}</p>
+                        <div className={styles.container}>
+                            <div className={styles.button}>
+                                <div >
+                                    <h5>{item.name}</h5>
+                                </div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+
+                            <h6>{item.email}</h6>
+                            <p> Phone number:{item.phone}, Website: {item.website}, Company name: {item.company.name}</p>
+                            <h6>15K Followers &#9679; 7K Following &#9679; Since April 30,2017</h6>
                         </div>
 
                     )
